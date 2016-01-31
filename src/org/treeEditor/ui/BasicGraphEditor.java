@@ -9,17 +9,7 @@ import java.util.Enumeration;
 import java.util.List;
 import java.text.NumberFormat;
 
-import javax.swing.AbstractAction;
-import javax.swing.Action;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JMenuBar;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JToolBar;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-import javax.swing.WindowConstants;
+import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
 
 import com.mxgraph.swing.mxGraphOutline;
@@ -57,13 +47,6 @@ public class BasicGraphEditor extends JPanel {
         }
     }
 
-    /**
-     * Holds the shared number formatter.
-     *
-     * @see NumberFormat#getInstance()
-     */
-    public static final NumberFormat numberFormat = NumberFormat.getInstance();
-
 //    /**
 //     * 存储从文件中读入的信息
 //     */
@@ -75,6 +58,16 @@ public class BasicGraphEditor extends JPanel {
     protected EditorToolBar toolBar;
 
     protected int toolBarComboBoxIndex = 0;
+
+    /**
+     *
+     */
+    protected mxGraphOutline graphOutline;
+
+    /**
+     *
+     */
+    protected JPanel libraryPane;
 
     /**
      * 当前显示面板
@@ -95,6 +88,11 @@ public class BasicGraphEditor extends JPanel {
      *
      */
     protected String appTitle;
+
+    /**
+     *
+     */
+    protected JLabel statusBar;
 
     /**
      *
@@ -124,42 +122,42 @@ public class BasicGraphEditor extends JPanel {
         this.appTitle = appTitle;
 
         // Creates the graph outline component
-//		graphOutline = new mxGraphOutline(graphComponent);
-//
-//		// Creates the library pane that contains the tabs with the palettes
-//		libraryPane = new JTabbedPane();
-//
-//		// Creates the inner split pane that contains the library with the
-//		// palettes and the graph outline on the left side of the window
-//		JSplitPane inner = new JSplitPane(JSplitPane.VERTICAL_SPLIT,
-//				libraryPane, graphOutline);
-//		inner.setDividerLocation(320);
-//		inner.setResizeWeight(1);
-//		inner.setDividerSize(6);
-//		inner.setBorder(null);
-//
-//		// Creates the outer split pane that contains the inner split pane and
-//		// the graph component on the right side of the window
-//		JSplitPane outer = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, inner,
-//				graphComponent);
-//		outer.setOneTouchExpandable(true);
-//		outer.setDividerLocation(200);
-//		outer.setDividerSize(6);
-//		outer.setBorder(null);
+        graphOutline = new mxGraphOutline(currentGraphComponent);
+
+        // Creates the library pane that contains the tabs with the palettes
+        libraryPane = new JPanel();
+
+        // Creates the inner split pane that contains the library with the
+        // palettes and the graph outline on the left side of the window
+        JSplitPane inner = new JSplitPane(JSplitPane.VERTICAL_SPLIT,
+                libraryPane, graphOutline);
+        inner.setDividerLocation(320);
+        inner.setResizeWeight(1);
+        inner.setDividerSize(6);
+        inner.setBorder(null);
+
+        // Creates the outer split pane that contains the inner split pane and
+        // the graph component on the right side of the window
+        JSplitPane outer = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, inner,
+                currentGraphComponent);
+        outer.setOneTouchExpandable(true);
+        outer.setDividerLocation(200);
+        outer.setDividerSize(6);
+        outer.setBorder(null);
 
         // Creates the status bar
-//		statusBar = createStatusBar();
+		statusBar = createStatusBar();
 
         // Display some useful information about repaint events
 //		installRepaintListener();
 
         // Puts everything together
-		setLayout(new BorderLayout());
-//		add(outer, BorderLayout.CENTER);
-//		add(statusBar, BorderLayout.SOUTH);
-		installToolBar();
-        installTabbedPane();
-        installTextPane();
+        setLayout(new BorderLayout());
+        add(outer, BorderLayout.CENTER);
+        add(statusBar, BorderLayout.SOUTH);
+//        installToolBar();
+//        installTabbedPane();
+//        installTextPane();
 
 
         // Installs rubberband selection and handling for some special
@@ -344,10 +342,10 @@ public class BasicGraphEditor extends JPanel {
                     BasicGraphEditor.this.mouseWheelMoved(e);
                 }
             }
-
         };
 
         // Handles mouse wheel events in the outline and graph component
+        graphOutline.addMouseWheelListener(wheelTracker);
         currentGraphComponent.addMouseWheelListener(wheelTracker);
 
 //		// Installs the popup menu in the outline
@@ -396,7 +394,16 @@ public class BasicGraphEditor extends JPanel {
                 }
             }
         });
+    }
 
+    /**
+     *
+     */
+    protected JLabel createStatusBar() {
+        JLabel statusBar = new JLabel(mxResources.get("ready"));
+        statusBar.setBorder(BorderFactory.createEmptyBorder(2, 4, 2, 4));
+
+        return statusBar;
     }
 
     /**
@@ -588,7 +595,7 @@ public class BasicGraphEditor extends JPanel {
     @SuppressWarnings("serial")
     public Action bind(String name, final Action action, String iconName) {
         AbstractAction newAction = new AbstractAction(name, (iconName != null) ? new ImageIcon(
-                loadImage(iconName) ) : null) {
+                loadImage(iconName)) : null) {
             public void actionPerformed(ActionEvent e) {
                 action.actionPerformed(new ActionEvent(getcurrentGraphComponent(), e
                         .getID(), e.getActionCommand()));

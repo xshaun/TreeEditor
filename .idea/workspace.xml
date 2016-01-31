@@ -42,10 +42,15 @@
       <file leaf-file-name="BasicGraphEditor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/treeEditor/ui/BasicGraphEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7579092">
-              <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.6643741">
+              <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#9386#9387#0" expanded="true" />
+                <element signature="e#9461#9462#0" expanded="true" />
+                <element signature="e#13303#13304#0" expanded="true" />
+                <element signature="e#13340#13341#0" expanded="true" />
+                <element signature="e#16425#16452#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,7 +153,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="-1855" />
     <option name="y" value="-4" />
     <option name="width" value="1855" />
     <option name="height" value="1084" />
@@ -877,12 +882,12 @@
       <workItem from="1454163770639" duration="9003000" />
       <workItem from="1454214117120" duration="4000" />
       <workItem from="1454214166681" duration="18927000" />
-      <workItem from="1454239227469" duration="5497000" />
+      <workItem from="1454239227469" duration="8994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33431000" />
+    <option name="totallyTimeSpent" value="36928000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -894,7 +899,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="-1855" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1486,10 +1491,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/treeEditor/ui/BasicGraphEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7579092">
-          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.6643741">
+          <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#9386#9387#0" expanded="true" />
+            <element signature="e#9461#9462#0" expanded="true" />
+            <element signature="e#13303#13304#0" expanded="true" />
+            <element signature="e#13340#13341#0" expanded="true" />
+            <element signature="e#16425#16452#0" expanded="true" />
           </folding>
         </state>
       </provider>
