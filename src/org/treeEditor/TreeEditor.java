@@ -33,7 +33,7 @@ public class TreeEditor extends BasicGraphEditor {
         try {
             // 普通不透明边框
             BeautyEyeLNFHelper.frameBorderStyle =
-                    BeautyEyeLNFHelper.FrameBorderStyle.generalNoTranslucencyShadow;
+                    BeautyEyeLNFHelper.FrameBorderStyle.osLookAndFeelDecorated;
 
             // 使用BeautyEye L&F
             org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper
