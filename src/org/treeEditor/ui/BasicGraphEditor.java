@@ -7,7 +7,6 @@ import java.awt.event.*;
 import java.io.File;
 import java.util.Enumeration;
 import java.util.List;
-import java.text.NumberFormat;
 
 import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
@@ -127,26 +126,37 @@ public class BasicGraphEditor extends JPanel {
         // Creates the library pane that contains the tabs with the palettes
         libraryPane = new JPanel();
 
-        // Creates the inner split pane that contains the library with the
-        // palettes and the graph outline on the left side of the window
-        JSplitPane inner = new JSplitPane(JSplitPane.VERTICAL_SPLIT,
-                libraryPane, graphOutline);
-        inner.setDividerLocation(320);
-        inner.setResizeWeight(1);
-        inner.setDividerSize(6);
-        inner.setBorder(null);
+        // Creates the textScroll pane
+        textScrollPane = new EditorTextScrollPane(this);
 
-        // Creates the outer split pane that contains the inner split pane and
-        // the graph component on the right side of the window
-        JSplitPane outer = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, inner,
-                currentGraphComponent);
+        // Creates the lefter split pane that contains the library with the
+        // palettes and the graph outline on the left side of the window
+        JSplitPane lefter = new JSplitPane(JSplitPane.VERTICAL_SPLIT,
+                libraryPane, graphOutline);
+        lefter.setDividerLocation(320);
+        lefter.setResizeWeight(1);
+        lefter.setDividerSize(6);
+        lefter.setBorder(null);
+
+        // Creates the righter split pane that contains the graphComponent and
+        // textScrollPane on the right side of the window
+        JSplitPane righter = new JSplitPane(JSplitPane.VERTICAL_SPLIT,
+                currentGraphComponent, textScrollPane);
+        righter.setDividerLocation(450);
+        righter.setResizeWeight(1);
+        righter.setDividerSize(6);
+        righter.setBorder(null);
+
+        // Creates the outer split pane that contains the lefter split pane and
+        // the righter component on the right side of the window
+        JSplitPane outer = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, lefter, righter);
         outer.setOneTouchExpandable(true);
         outer.setDividerLocation(200);
         outer.setDividerSize(6);
         outer.setBorder(null);
 
         // Creates the status bar
-		statusBar = createStatusBar();
+        statusBar = createStatusBar();
 
         // Display some useful information about repaint events
 //		installRepaintListener();
@@ -422,14 +432,6 @@ public class BasicGraphEditor extends JPanel {
         add(this.tabbedPane, BorderLayout.CENTER);
     }
 
-    /**
-     *
-     */
-    protected void installTextPane() {
-        this.textScrollPane = new EditorTextScrollPane(this);
-        add(textScrollPane, BorderLayout.SOUTH);
-    }
-
 //    /**
 //     * dataTree 的 setter() 和 getter()
 //     */
@@ -702,10 +704,10 @@ public class BasicGraphEditor extends JPanel {
     /**
      * 设置全局字体
      *
-     * @param fnt
+     * @param font
      */
-    public static void initGlobalFontSetting(Font fnt) {
-        FontUIResource fontRes = new FontUIResource(fnt);
+    public static void initGlobalFontSetting(Font font) {
+        FontUIResource fontRes = new FontUIResource(font);
         for (Enumeration<?> keys = UIManager.getDefaults().keys(); keys
                 .hasMoreElements(); ) {
             Object key = keys.nextElement();
