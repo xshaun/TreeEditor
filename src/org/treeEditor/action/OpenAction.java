@@ -1,9 +1,18 @@
 package org.treeEditor.action;
 
+import com.mxgraph.io.mxCodec;
+import com.mxgraph.util.mxResources;
+import com.mxgraph.util.mxUtils;
+import com.mxgraph.util.mxXmlUtils;
+import com.mxgraph.view.mxGraph;
+import org.treeEditor.process.DefaultFileFilter;
 import org.treeEditor.ui.BasicGraphEditor;
+import org.w3c.dom.Document;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by boy on 16-1-31.
@@ -47,60 +56,60 @@ public class OpenAction extends BasicAbstractAction {
     public void actionPerformed(ActionEvent e) {
         BasicGraphEditor editor = getEditor(e);
 
-//        if (editor != null) {
-//            mxGraph graph = editor.getCurGraphComponent().getGraph();
-//
-//            if (!editor.isModified()
-//                    || JOptionPane.showConfirmDialog(editor,
-//                    mxResources.get("loseChanges")) == JOptionPane.YES_OPTION) {
-//
-//                JFileChooser fc = new JFileChooser(System.getProperty("user.dir") + "/data");
-//
-//                // Adds file filter for supported file format
-//                fc.addChoosableFileFilter(new DefaultFileFilter(".xml",
-//                        "XML Tree " + mxResources.get("file")
-//                                + " (.xml)"));
-//                fc.addChoosableFileFilter(new DefaultFileFilter(".mxe",
-//                        "mxGraph Editor " + mxResources.get("file")
-//                                + " (.mxe)"));
-//
-//                int rc = fc.showDialog(null, mxResources.get("openFile"));
-//
-//                if (rc == JFileChooser.APPROVE_OPTION) {
-//                    try {
-//                        //打开XML文件
-//                        if (fc.getSelectedFile().getAbsolutePath().toLowerCase().endsWith(".xml")) {
-//                            openXml(editor, fc.getSelectedFile());
-//
-//                        } else if (fc.getSelectedFile().getAbsolutePath().toLowerCase().endsWith(".mxe")) {
-//                            Document document = mxXmlUtils
-//                                    .parseXml(mxUtils.readFile(fc
-//                                            .getSelectedFile()
-//                                            .getAbsolutePath()));
-//
-//                            mxCodec codec = new mxCodec(document);
-//                            codec.decode(
-//                                    document.getDocumentElement(),
-//                                    graph.getModel());
-//                            editor.setCurrentFile(fc
-//                                    .getSelectedFile());
-//
-//                            resetEditor(editor);
-//
-//                        }//打开不支持类型的文件
-//                        else {
-//                            JOptionPane.showMessageDialog(editor, mxResources.get("notSupport"));
-//                        }
-//                    } catch (IOException ex) {
-//                        ex.printStackTrace();
-//                        JOptionPane.showMessageDialog(
-//                                editor,
-//                                ex.toString(),
-//                                mxResources.get("error"),
-//                                JOptionPane.ERROR_MESSAGE);
-//                    }
-//                }
-//            }
-//        }
+        if (editor != null) {
+            mxGraph graph = editor.getcurrentGraphComponent().getGraph();
+
+            if (!editor.isModified()
+                    || JOptionPane.showConfirmDialog(editor,
+                    mxResources.get("loseChanges")) == JOptionPane.YES_OPTION) {
+
+                JFileChooser fc = new JFileChooser(System.getProperty("user.dir") + "/data");
+
+                // Adds file filter for supported file format
+                fc.addChoosableFileFilter(new DefaultFileFilter(".xml",
+                        "XML Tree " + mxResources.get("file")
+                                + " (.xml)"));
+                fc.addChoosableFileFilter(new DefaultFileFilter(".mxe",
+                        "mxGraph Editor " + mxResources.get("file")
+                                + " (.mxe)"));
+
+                int rc = fc.showDialog(null, mxResources.get("openFile"));
+
+                if (rc == JFileChooser.APPROVE_OPTION) {
+                    try {
+                        //打开XML文件
+                        if (fc.getSelectedFile().getAbsolutePath().toLowerCase().endsWith(".xml")) {
+                            openXml(editor, fc.getSelectedFile());
+
+                        } else if (fc.getSelectedFile().getAbsolutePath().toLowerCase().endsWith(".mxe")) {
+                            Document document = mxXmlUtils
+                                    .parseXml(mxUtils.readFile(fc
+                                            .getSelectedFile()
+                                            .getAbsolutePath()));
+
+                            mxCodec codec = new mxCodec(document);
+                            codec.decode(
+                                    document.getDocumentElement(),
+                                    graph.getModel());
+                            editor.setCurrentFile(fc
+                                    .getSelectedFile());
+
+                            resetEditor(editor);
+
+                        }//打开不支持类型的文件
+                        else {
+                            JOptionPane.showMessageDialog(editor, mxResources.get("notSupport"));
+                        }
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                        JOptionPane.showMessageDialog(
+                                editor,
+                                ex.toString(),
+                                mxResources.get("error"),
+                                JOptionPane.ERROR_MESSAGE);
+                    }
+                }
+            }
+        }
     }
 }

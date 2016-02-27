@@ -37,7 +37,6 @@ public class EditorMenuBar extends JMenuBar {
 
         menu.add(editor.bind(mxResources.get("save"), new SaveAction(SaveAction.NOTSHOWDIALOG), "save.gif"));
         menu.add(editor.bind(mxResources.get("saveAs"), new SaveAction(SaveAction.SHOWDIALOG), "saveas.gif"));
-        menu.add(editor.bind(mxResources.get("finalSave"), new FinalSaveAction(), "finalsave.png"));
 
         menu.addSeparator();
 

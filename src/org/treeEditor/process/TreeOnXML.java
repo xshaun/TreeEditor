@@ -21,9 +21,6 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
-import com.mxgraph.analysis.mxAnalysisGraph;
-import com.mxgraph.analysis.mxGraphStructure;
-import com.mxgraph.util.mxEvent;
 import org.treeEditor.ui.BasicGraphEditor;
 import org.treeEditor.ui.CustomGraphComponent;
 
