@@ -1,0 +1,112 @@
+.tag
+$tag_1 : CC
+$tag_2 : CD
+$tag_3 : DT
+$tag_4 : EX
+$tag_5 : FW
+$tag_6 : IN
+$tag_7 : JJ
+$tag_8 : JJR
+$tag_9 : JJS
+$tag_10 : LS
+$tag_11 : MD
+$tag_12 : NN
+$tag_13 : NNP
+$tag_14 : NNPS
+$tag_15 : NNS
+$tag_16 : PDT
+$tag_17 : POS
+$tag_18 : PRP
+$tag_19 : PRP$
+$tag_20 : RB
+$tag_21 : RBR
+$tag_22 : RBS
+$tag_23 : RP
+$tag_24 : SYM
+$tag_25 : TO
+$tag_26 : UH
+$tag_27 : VB
+$tag_28 : VBD
+$tag_29 : VBG
+$tag_30 : VBN
+$tag_31 : VBP
+$tag_32 : VBZ
+$tag_33 : WDT
+$tag_34 : WP
+$tag_35 : WP$
+$tag_36 : WRB
+$tag_37 : ADJP
+$tag_38 : ADVP
+$tag_39 : NP
+$tag_40 : PP
+$tag_41 : S
+$tag_42 : SBAR
+$tag_43 : SBARQ
+$tag_44 : SINV
+$tag_45 : SQ
+$tag_46 : VP
+$tag_47 : WHADVP
+$tag_48 : WHNP
+$tag_49 : WHPP
+$tag_50 : X
+$tag_51 : SL
+.tagend
+
+.attr
+$attr_1 : CO = HL,CT,NO
+$attr_2 : GF = P,PR,S,O,PDC,LCC,PPC,CTC,CLC,PC,ATM,ETM,APM,SP,GP,SL
+.attrend
+
+.text
+$tag_1 : $attr_1, $attr_2
+$tag_2 : $attr_1, $attr_2
+$tag_3 : $attr_1, $attr_2
+$tag_4 : $attr_1, $attr_2
+$tag_5 : $attr_1, $attr_2
+$tag_6 : $attr_1, $attr_2
+$tag_7 : $attr_1, $attr_2
+$tag_8 : $attr_1, $attr_2
+$tag_9 : $attr_1, $attr_2
+$tag_10 : $attr_1, $attr_2
+$tag_11 : $attr_1, $attr_2
+$tag_12 : $attr_1, $attr_2
+$tag_13 : $attr_1, $attr_2
+$tag_14 : $attr_1, $attr_2
+$tag_15 : $attr_1, $attr_2
+$tag_16 : $attr_1, $attr_2
+$tag_17 : $attr_1, $attr_2
+$tag_18 : $attr_1, $attr_2
+$tag_19 : $attr_1, $attr_2
+$tag_20 : $attr_1, $attr_2
+$tag_21 : $attr_1, $attr_2
+$tag_22 : $attr_1, $attr_2
+$tag_23 : $attr_1, $attr_2
+$tag_24 : $attr_1, $attr_2
+$tag_25 : $attr_1, $attr_2
+$tag_26 : $attr_1, $attr_2
+$tag_27 : $attr_1, $attr_2
+$tag_28 : $attr_1, $attr_2
+$tag_29 : $attr_1, $attr_2
+$tag_30 : $attr_1, $attr_2
+$tag_31 : $attr_1, $attr_2
+$tag_32 : $attr_1, $attr_2
+$tag_33 : $attr_1, $attr_2
+$tag_34 : $attr_1, $attr_2
+$tag_35 : $attr_1, $attr_2
+$tag_36 : $attr_1, $attr_2
+$tag_37 : $attr_1, $attr_2
+$tag_38 : $attr_1, $attr_2
+$tag_39 : $attr_1, $attr_2
+$tag_40 : $attr_1, $attr_2
+$tag_41 : $attr_1, $attr_2
+$tag_42 : $attr_1, $attr_2
+$tag_43 : $attr_1, $attr_2
+$tag_44 : $attr_1, $attr_2
+$tag_45 : $attr_1, $attr_2
+$tag_46 : $attr_1, $attr_2
+$tag_47 : $attr_1, $attr_2
+$tag_48 : $attr_1, $attr_2
+$tag_49 : $attr_1, $attr_2
+$tag_50 : $attr_1, $attr_2
+.textend
+

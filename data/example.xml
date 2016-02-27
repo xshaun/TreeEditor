@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <zhp_weicheng01.xml>
+        <a id="8" no="1">
+            <s id="8">在 中国 热 得 更 比 常年 利害 ， 事 后 大家 都 说是 兵戈 之 象 ， 因为 这 就是 民国 二十六 年 一九三七年 。</s>
+        </a>
+        <a id="8" no="2">
+            <s id="10">In China the heat was even more oppressive than usual .</s>
+            <s id="11">Later everyone agreed the unusual heat was a portent of troops and arms , for it was the
+                twenty-sixth year of the Republic 1937 .
+            </s>
+        </a>
+    </zhp_weicheng01.xml>
+    <book>
+        <a m="t" id="265" no="1">
+            <s id="6">最初 他还
+                <PA CPOM="B">肯说 外国</PA>
+                算法 的 十足 岁数 ， 年复一年 ， 他 偷偷 买 了 一 本 翻译 的 Life Begins at Forty ， 对 人家 干脆 不 说 年龄 ， 不 讲 生肖 ， 只 说 ： “ 小 得 很 呢 ！
+            </s>
+        </a>
+        <a id="265" no="1">
+            <s id="7">At first he would give his full age according to the Western way of reckoning , but as the years
+                went by , he secretly bought a translation of the book Life Begins at Forty and would simply not tell
+                anyone his age nor give the animal sign of the year of his birth , merely saying , `` Oh , quite young !
+            </s>
+        </a>
+    </book>
+</root>

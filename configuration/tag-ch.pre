@@ -1,0 +1,125 @@
+.tag
+$tag_1 : AD
+$tag_2 : AS
+$tag_3 : BA
+$tag_4 : CC
+$tag_5 : CD
+$tag_6 : CS
+$tag_7 : DEC
+$tag_8 : DEG
+$tag_9 : DER
+$tag_10 : DEV
+$tag_11 : DT
+$tag_12 : ETC
+$tag_13 : FW
+$tag_14 : IJ
+$tag_15 : JJ
+$tag_16 : LB
+$tag_17 : LC
+$tag_18 : M
+$tag_19 : MSP
+$tag_20 : NN
+$tag_21 : NR
+$tag_22 : NT
+$tag_23 : OD
+$tag_24 : ON
+$tag_25 : P
+$tag_26 : PN
+$tag_27 : PU
+$tag_28 : SB
+$tag_29 : SP
+$tag_30 : VA
+$tag_31 : VC
+$tag_32 : VE
+$tag_33 : VV
+$tag_34 : ADJP
+$tag_35 : ADVP
+$tag_36 : CLP
+$tag_37 : CP
+$tag_38 : DNP
+$tag_39 : DP
+$tag_40 : DVP
+$tag_41 : FRAG
+$tag_42 : IP
+$tag_43 : LCP
+$tag_44 : LST
+$tag_45 : NP
+$tag_46 : PP
+$tag_47 : PRN
+$tag_48 : QP
+$tag_49 : UCP
+$tag_50 : VP
+$tag_51 : VCD
+$tag_52 : VCP
+$tag_53 : VNV
+$tag_54 : VPT
+$tag_55 : VRD
+$tag_56 : VSB
+.tagend
+
+.attr
+$attr_1 : FCS = T
+$attr_2 : GF = A,B,C,D,E,F,G,H,I,J,K
+$attr_3 : SR = CS,EX,RL,AG,ST,RG,PT,TH,LC
+$attr_4 : COMP = PT,DG,RS,DR
+$attr_5 : COMP_SL = T
+.attrend
+
+.text
+$tag_1 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5 
+$tag_2 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_3 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_4 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_5 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_6 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_7 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_8 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_9 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_10 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_11 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_12 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_13 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_14 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_15 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_16 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_17 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_18 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_19 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_20 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_21 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_22 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_23 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_24 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_25 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_26 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_27 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_28 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_29 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_30 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_31 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_32 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_33 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_34 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_35 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_36 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_37 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_38 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_39 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_40 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_41 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_42 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_43 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_44 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_45 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_46 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_47 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_48 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_49 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_50 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_51 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_52 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_53 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_54 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_55 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+$tag_56 : $attr_1, $attr_2, $attr_3, $attr_4, $attr_5
+.textend

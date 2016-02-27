@@ -1,0 +1,202 @@
+<tagroot>
+    <tag name="PRP$">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="JJS">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="PRP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="WHPP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="JJR">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="POS">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="WHNP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="JJ">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="PDT">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="WHADVP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="IN">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="NNS">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="VP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="FW">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="NNPS">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="SQ">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="EX">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="NNP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="SINV">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="DT">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="NN">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="SBARQ">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="CD">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="MD">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="SBAR">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="CC">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="LS">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="S">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="PP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="NP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="ADVP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="ADJP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="WRB">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="WP$">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="WP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="WDT">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="VBZ">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="VBP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="VBN">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="VBG">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="VBD">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="VB">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="UH">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="TO">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="SYM">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="RP">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="RBS">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="RBR">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="RB">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+    <tag name="X">
+        <attr name="CO" value="HL CT NO"/>
+        <attr name="GF" value="P PR S O PDC LCC PPC CTC CLC PC ATM ETM APM SP GP SL"/>
+    </tag>
+</tagroot>

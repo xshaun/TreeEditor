@@ -1,0 +1,401 @@
+<tagroot>
+    <tag name="MSP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="M">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="DER">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="UCP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="LC">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="DEG">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="QP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="LB">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="DEC">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="PRN">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="JJ">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="CS">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="PP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="IJ">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="CD">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="NP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="FW">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="CC">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="LST">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="ETC">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="BA">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="LCP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="DT">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="AS">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="IP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="DEV">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="AD">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="FRAG">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="DVP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="DP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="DNP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="CP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="CLP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="ADVP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="ADJP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VV">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VE">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VC">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VA">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="SP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="SB">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="PU">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="PN">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="P">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VSB">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="ON">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VRD">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="OD">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VPT">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="NT">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VNV">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="NR">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VCP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="NN">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VCD">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="VP">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+    <tag name="PA">
+        <attr name="FCS" value="T"/>
+        <attr name="GF" value="A B C D E F G H I J K"/>
+        <attr name="SR" value="CS EX RL AG ST RG PT TH LC"/>
+        <attr name="COMP" value="PT DG RS DR"/>
+        <attr name="COMP_SL" value="T"/>
+    </tag>
+</tagroot>
