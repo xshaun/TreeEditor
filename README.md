@@ -1,6 +1,8 @@
 # TreeEditor
 自然语言处理标注工具。可以图形化XML文件，清晰绘制相应树形结构，并支持中英文对比，对相应的文本进行标注。
-![软件概览](./asset/images/overview.png)
+
+![软件概览](./asset/images/overview1.png)
+![软件概览](./asset/images/overview2.png)
 
 ### 使用步骤
 1. 打开数据文件。

@@ -18,7 +18,7 @@ public class GraphEditor extends BasicGraphEditor {
      *
      */
     public GraphEditor() {
-        super("Tree Editor-Phrase");
+        super("Tree Editor");
     }
 
     /**
