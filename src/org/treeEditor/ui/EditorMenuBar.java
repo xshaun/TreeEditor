@@ -175,23 +175,6 @@ public class EditorMenuBar extends JMenuBar {
         menu.add(editor.bind(mxResources.get("zoomActual"), mxGraphActions.getZoomActualAction(), "zoomactual.gif"));
 
         /*
-         *  Creates the window menu
-         */
-        menu = add(new JMenu(mxResources.get("window")));
-
-        menu.add(editor.bind(mxResources.get("split"), new WindowAction(WindowAction.SPLIT), "split.gif"));
-        menu.add(editor.bind(mxResources.get("tabbed"), new WindowAction(WindowAction.TABBED), "tabbed.gif"));
-
-        menu.addSeparator();
-
-        /*
-         * Creates the convert menu
-         */
-        menu = add(new JMenu(mxResources.get("convert")));
-
-        menu.add(editor.bind(mxResources.get("DERtree"), new ConvertDERTreeAction()));
-
-        /*
          * Creates the help menu
          */
         menu = add(new JMenu(mxResources.get("help")));

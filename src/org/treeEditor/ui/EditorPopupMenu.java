@@ -13,33 +13,33 @@ import static org.treeEditor.assist.LoadFile.loadImage;
 
 public class EditorPopupMenu extends JPopupMenu {
 
-	/**
-	 *
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 *
-	 */
-	private final String url =("/cn/edu/zzu/nlp/images/");
+    /**
+     *
+     */
+    private final String url = ("/cn/edu/zzu/nlp/images/");
 
-	/**
-	 *
-	 */
-	public static final int TEXTMENU = 1 ;
+    /**
+     *
+     */
+    public static final int TEXTMENU = 1;
 
-	public static final int GRAPHMENU = 2 ;
+    public static final int GRAPHMENU = 2;
 
 
-	public EditorPopupMenu(final BasicGraphEditor editor, int type){
+    public EditorPopupMenu(final BasicGraphEditor editor, int type) {
 
-		JMenu subMenu;
+        JMenu subMenu;
 
-		switch(type){
-			/**
-			 * textPopupMenu
-			 */
-			case TEXTMENU:
+        switch (type) {
+            /**
+             * textPopupMenu
+             */
+            case TEXTMENU:
 
 //          /*
 //           * Creates the text menu
@@ -56,115 +56,115 @@ public class EditorPopupMenu extends JPopupMenu {
             /*
              * Creates the add menu
              */
-				subMenu = (JMenu) this.add(new JMenu(mxResources.get("add")));
-				subMenu.setIcon(new ImageIcon(loadImage("add.png")));
+                subMenu = (JMenu) this.add(new JMenu(mxResources.get("add")));
+                subMenu.setIcon(new ImageIcon(loadImage("add.png")));
 
-				subMenu.add(editor.bind(mxResources.get("addTag"), new TextAddAction(TextAddAction.TAG), "text-addtag.png"));
+                subMenu.add(editor.bind(mxResources.get("addTag"), new TextAddAction(TextAddAction.TAG), "text-addtag.png"));
 
-				subMenu.add(editor.bind(mxResources.get("addAttr"), new TextAddAction(TextAddAction.ATTR), "text-addattr.png"));
+                subMenu.add(editor.bind(mxResources.get("addAttr"), new TextAddAction(TextAddAction.ATTR), "text-addattr.png"));
 
-				subMenu.add(editor.bind(mxResources.get("addBlank"), new TextAddAction(TextAddAction.BLANK), "text-addblank.png"));
+                subMenu.add(editor.bind(mxResources.get("addBlank"), new TextAddAction(TextAddAction.BLANK), "text-addblank.png"));
 
 
-				this.addSeparator();
+                this.addSeparator();
 
             /*
              * Creates the replace menu
              */
-				subMenu = (JMenu) this.add(new JMenu(mxResources.get("replace")));
+                subMenu = (JMenu) this.add(new JMenu(mxResources.get("replace")));
 
-				subMenu.setIcon(new ImageIcon(loadImage("replace.png")));
+                subMenu.setIcon(new ImageIcon(loadImage("replace.png")));
 
-				subMenu.add(editor.bind(mxResources.get("replaceTag"), new TextReplaceAction(TextReplaceAction.TAG), "text-replacetag.png"));
+                subMenu.add(editor.bind(mxResources.get("replaceTag"), new TextReplaceAction(TextReplaceAction.TAG), "text-replacetag.png"));
 
-				subMenu.add(editor.bind(mxResources.get("replaceAttr"), new TextReplaceAction(TextReplaceAction.ATTR), "text-replaceattr.png"));
+                subMenu.add(editor.bind(mxResources.get("replaceAttr"), new TextReplaceAction(TextReplaceAction.ATTR), "text-replaceattr.png"));
 
-				this.addSeparator();
+                this.addSeparator();
 
             /*
              * Creates the delete menuItem
              */
-				this.add(editor.bind(mxResources.get("delete"), new TextDeleteAction(), "text-delete.png"));
+                this.add(editor.bind(mxResources.get("delete"), new TextDeleteAction(), "text-delete.png"));
 
-				this.addSeparator();
+                this.addSeparator();
 
             /*
              * Creates the undo menuItem
              */
-				this.add(editor.bind(mxResources.get("undo"), new TextHistoryAction(TextHistoryAction.UNDO), "text-undo.png"));
+                this.add(editor.bind(mxResources.get("undo"), new TextHistoryAction(TextHistoryAction.UNDO), "text-undo.png"));
 
             /*
              * Creates the redo menuItem
              */
-				this.add(editor.bind(mxResources.get("redo"), new TextHistoryAction(TextHistoryAction.REDO), "text-redo.png"));
+                this.add(editor.bind(mxResources.get("redo"), new TextHistoryAction(TextHistoryAction.REDO), "text-redo.png"));
 
-				this.addSeparator();
+                this.addSeparator();
 
             /*
              * Creates the match menuItem
              */
-				this.add(editor.bind(mxResources.get("match"), new MatchAction(), "text-match.gif"));
+                this.add(editor.bind(mxResources.get("match"), new MatchAction(), "text-match.gif"));
 
-				this.addSeparator();
+                this.addSeparator();
 
             /*
              * Creates the ShowThisTags menuItem
              */
-				this.add(editor.bind(mxResources.get("showThisTags"), new ShowThisTagsAction(), "text-showthistags.png"));
+                this.add(editor.bind(mxResources.get("showThisTags"), new ShowThisTagsAction(), "text-showthistags.png"));
 
-				this.addSeparator();
+                this.addSeparator();
 
             /*
              * Creates the RemoveOtherTags menuItem
              */
-				this.add(editor.bind(mxResources.get("removeOtherTags"), new RemoveOtherTagsAction(), "text-removeothertags.png"));
+                this.add(editor.bind(mxResources.get("removeOtherTags"), new RemoveOtherTagsAction(), "text-removeothertags.png"));
 
-				this.addSeparator();
+                this.addSeparator();
 
             /*
              * Creates the repaint menuItem
              */
-				this.add(editor.bind(mxResources.get("repaint"), new RepaintAction(), "text-repaint.gif"));
+                this.add(editor.bind(mxResources.get("repaint"), new RepaintAction(), "text-repaint.gif"));
 
 
-				break;
+                break;
 
-			/**
-			 * graphPopupMenu
-			 */
-			case GRAPHMENU:
+            /**
+             * graphPopupMenu
+             */
+            case GRAPHMENU:
 
             /*
              * Creates the undo/redo menuItem
              */
 
-				this.add(editor.bind(mxResources.get("undo"), new HistoryAction(HistoryAction.UNDO), "undo.gif"));
-				this.add(editor.bind(mxResources.get("redo"), new HistoryAction(HistoryAction.REDO), "redo.gif"));
+                this.add(editor.bind(mxResources.get("undo"), new HistoryAction(HistoryAction.UNDO), "undo.gif"));
+                this.add(editor.bind(mxResources.get("redo"), new HistoryAction(HistoryAction.REDO), "redo.gif"));
 
-				this.addSeparator();
+                this.addSeparator();
 
-				this.add(editor.bind(mxResources.get("cut"), TransferHandler.getCutAction(), "cut.gif"));
-				this.add(editor.bind(mxResources.get("copy"), TransferHandler.getCopyAction(), "copy.gif"));
-				this.add(editor.bind(mxResources.get("paste"), TransferHandler.getPasteAction(), "paste.gif"));
+                this.add(editor.bind(mxResources.get("cut"), TransferHandler.getCutAction(), "cut.gif"));
+                this.add(editor.bind(mxResources.get("copy"), TransferHandler.getCopyAction(), "copy.gif"));
+                this.add(editor.bind(mxResources.get("paste"), TransferHandler.getPasteAction(), "paste.gif"));
 
-				this.addSeparator();
+                this.addSeparator();
 
-				this.add(editor.bind(mxResources.get("selectAll"), mxGraphActions.getSelectAllAction(), "selectall.gif"));
-				this.add(editor.bind(mxResources.get("selectNone"), mxGraphActions.getSelectNoneAction(),  "selectnone.gif"));
-				this.add(editor.bind(mxResources.get("delete"), mxGraphActions.getDeleteAction(), "delete.gif"));
+                this.add(editor.bind(mxResources.get("selectAll"), mxGraphActions.getSelectAllAction(), "selectall.gif"));
+                this.add(editor.bind(mxResources.get("selectNone"), mxGraphActions.getSelectNoneAction(), "selectnone.gif"));
+                this.add(editor.bind(mxResources.get("delete"), mxGraphActions.getDeleteAction(), "delete.gif"));
 
-				this.addSeparator();
+                this.addSeparator();
 
-				this.add(editor.bind(mxResources.get("edit"), mxGraphActions.getEditAction(), "ui.gif"));
+                this.add(editor.bind(mxResources.get("edit"), mxGraphActions.getEditAction(), "ui.gif"));
 
-				this.addSeparator();
+                this.addSeparator();
 
-				this.add(editor.bind(mxResources.get("graphToText"), new GraphToText(), "graphtotext.gif"));
+                this.add(editor.bind(mxResources.get("graphToText"), new GraphToText(), "graphtotext.gif"));
 
-				break;
+                break;
 
-		}
+        }
 
-	}
+    }
 
 }

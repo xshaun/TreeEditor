@@ -126,6 +126,9 @@ public class BasicGraphEditor extends JPanel {
         // Creates the library pane that contains the tabs with the palettes
         libraryPane = new JPanel();
 
+        // Creates tabbed pane
+        tabbedPane = new EditorTabbedPane(this);
+
         // Creates the textScroll pane
         textScrollPane = new EditorTextScrollPane(this);
 
@@ -141,8 +144,8 @@ public class BasicGraphEditor extends JPanel {
         // Creates the righter split pane that contains the graphComponent and
         // textScrollPane on the right side of the window
         JSplitPane righter = new JSplitPane(JSplitPane.VERTICAL_SPLIT,
-                currentGraphComponent, textScrollPane);
-        righter.setDividerLocation(450);
+                tabbedPane, textScrollPane);
+        righter.setDividerLocation(400);
         righter.setResizeWeight(1);
         righter.setDividerSize(6);
         righter.setBorder(null);
@@ -155,6 +158,9 @@ public class BasicGraphEditor extends JPanel {
         outer.setDividerSize(6);
         outer.setBorder(null);
 
+        // Creates toolBar
+        toolBar = new EditorToolBar(this, JToolBar.HORIZONTAL);
+
         // Creates the status bar
         statusBar = createStatusBar();
 
@@ -163,12 +169,9 @@ public class BasicGraphEditor extends JPanel {
 
         // Puts everything together
         setLayout(new BorderLayout());
+        add(toolBar, BorderLayout.NORTH);
         add(outer, BorderLayout.CENTER);
         add(statusBar, BorderLayout.SOUTH);
-//        installToolBar();
-//        installTabbedPane();
-//        installTextPane();
-
 
         // Installs rubberband selection and handling for some special
         // keystrokes such as F2, Control-C, -V, X, A etc.
@@ -414,22 +417,6 @@ public class BasicGraphEditor extends JPanel {
         statusBar.setBorder(BorderFactory.createEmptyBorder(2, 4, 2, 4));
 
         return statusBar;
-    }
-
-    /**
-     *
-     */
-    protected void installToolBar() {
-        this.toolBar = new EditorToolBar(this, JToolBar.HORIZONTAL);
-        add(toolBar, BorderLayout.NORTH);
-    }
-
-    /**
-     *
-     */
-    protected void installTabbedPane() {
-        this.tabbedPane = new EditorTabbedPane(this);
-        add(this.tabbedPane, BorderLayout.CENTER);
     }
 
 //    /**

@@ -24,147 +24,135 @@ import javax.swing.KeyStroke;
 
 import com.mxgraph.util.mxResources;
 
-public class EditorAboutFrame extends JDialog
-{
+public class EditorAboutFrame extends JDialog {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * 
-	 */
-	public EditorAboutFrame(Frame owner)
-	{
-		super(owner);
-		setTitle(mxResources.get("aboutThisEditor"));
-		setLayout(new BorderLayout());
+    /**
+     *
+     */
+    public EditorAboutFrame(Frame owner) {
+        super(owner);
+        setTitle(mxResources.get("aboutThisEditor"));
+        setLayout(new BorderLayout());
 
-		// Creates the gradient panel
-		JPanel panel = new JPanel(new BorderLayout())
-		{
+        // Creates the gradient panel
+        JPanel panel = new JPanel(new BorderLayout()) {
 
-			/**
-			 * 
-			 */
-			private static final long serialVersionUID = 1L;
+            /**
+             *
+             */
+            private static final long serialVersionUID = 1L;
 
-			/**
-			 * 
-			 */
-			public void paintComponent(Graphics g)
-			{
-				super.paintComponent(g);
+            /**
+             *
+             */
+            public void paintComponent(Graphics g) {
+                super.paintComponent(g);
 
-				// Paint gradient background
-				Graphics2D g2d = (Graphics2D) g;
-				g2d.setPaint(new GradientPaint(0, 0, Color.WHITE, getWidth(),
-						0, getBackground()));
-				g2d.fillRect(0, 0, getWidth(), getHeight());
-			}
+                // Paint gradient background
+                Graphics2D g2d = (Graphics2D) g;
+                g2d.setPaint(new GradientPaint(0, 0, Color.WHITE, getWidth(),
+                        0, getBackground()));
+                g2d.fillRect(0, 0, getWidth(), getHeight());
+            }
 
-		};
+        };
 
-		panel.setBorder(BorderFactory.createCompoundBorder(BorderFactory
-				.createMatteBorder(0, 0, 1, 0, Color.GRAY), BorderFactory
-				.createEmptyBorder(8, 8, 12, 8)));
+        panel.setBorder(BorderFactory.createCompoundBorder(BorderFactory
+                .createMatteBorder(0, 0, 1, 0, Color.GRAY), BorderFactory
+                .createEmptyBorder(8, 8, 12, 8)));
 
-		// Adds title
-		JLabel titleLabel = new JLabel(mxResources.get("aboutThisEditor"));
-		titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD));
-		titleLabel.setBorder(BorderFactory.createEmptyBorder(4, 0, 0, 0));
-		titleLabel.setOpaque(false);
-		panel.add(titleLabel, BorderLayout.NORTH);
+        // Adds title
+        JLabel titleLabel = new JLabel(mxResources.get("aboutThisEditor"));
+        titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD));
+        titleLabel.setBorder(BorderFactory.createEmptyBorder(4, 0, 0, 0));
+        titleLabel.setOpaque(false);
+        panel.add(titleLabel, BorderLayout.NORTH);
 
-		// Adds optional subtitle
-		JLabel subtitleLabel = new JLabel(
-				"<html>此工具是基于JGraph进行开发<br />具有语法树的编辑、对比等功能</html>");
-		subtitleLabel.setBorder(BorderFactory.createEmptyBorder(4, 18, 0, 0));
-		subtitleLabel.setOpaque(false);
-		panel.add(subtitleLabel, BorderLayout.CENTER);
+        // Adds optional subtitle
+        JLabel subtitleLabel = new JLabel(
+                "<html>此工具是基于JGraph进行开发<br />具有语法树的编辑、对比等功能</html>");
+        subtitleLabel.setBorder(BorderFactory.createEmptyBorder(4, 18, 0, 0));
+        subtitleLabel.setOpaque(false);
+        panel.add(subtitleLabel, BorderLayout.CENTER);
 
-		getContentPane().add(panel, BorderLayout.NORTH);
+        getContentPane().add(panel, BorderLayout.NORTH);
 
-		JPanel content = new JPanel();
-		content.setLayout(new BoxLayout(content, BoxLayout.Y_AXIS));
-		content.setBorder(BorderFactory.createEmptyBorder(12, 12, 12, 12));
+        JPanel content = new JPanel();
+        content.setLayout(new BoxLayout(content, BoxLayout.Y_AXIS));
+        content.setBorder(BorderFactory.createEmptyBorder(12, 12, 12, 12));
 
-		content.add(new JLabel("版本号： VS20141106"));
-		content.add(new JLabel("Copyright (C) 2014 郑州大学 孙晓阳"));
-		content.add(new JLabel("版权所有"));
-		content.add(new JLabel(" "));
-		
-		content.add(new JLabel("技术支持： 郑州大学自然语言处理实验室 梁军、冯晓波"));
-		content.add(new JLabel("鸣谢：JGraph  Eclipse  Ubuntu"));
-		content.add(new JLabel(" "));
-		try
-		{
-			content.add(new JLabel("操作系统名称: "
-					+ System.getProperty("os.name")));
-			content.add(new JLabel("操作系统版本: "
-					+ System.getProperty("os.version")));
-			content.add(new JLabel(" "));
+        content.add(new JLabel("版本号： V1.0"));
+        content.add(new JLabel("Copyright (C) 2016 郑州大学自然语言处理实验室"));
+        content.add(new JLabel("版权所有"));
+        content.add(new JLabel(" "));
 
-			content.add(new JLabel("Java 供应商: "
-					+ System.getProperty("java.vendor", "undefined")));
-			content.add(new JLabel("Java 版本: "
-					+ System.getProperty("java.version", "undefined")));
-			content.add(new JLabel(" "));
+        content.add(new JLabel("技术支持： 孙晓阳、梁军、冯晓波"));
+        content.add(new JLabel("鸣谢：JGraph  IDEA  Ubuntu"));
+        content.add(new JLabel(" "));
+        try {
+            content.add(new JLabel("操作系统名称: "
+                    + System.getProperty("os.name")));
+            content.add(new JLabel("操作系统版本: "
+                    + System.getProperty("os.version")));
+            content.add(new JLabel(" "));
 
-			content.add(new JLabel("全部内存: "
-					+ Runtime.getRuntime().totalMemory()));
-			content.add(new JLabel("剩余内存: "
-					+ Runtime.getRuntime().freeMemory()));
-		}
-		catch (Exception e)
-		{
-			// ignore
-		}
-		
-		getContentPane().add(content, BorderLayout.CENTER);
+            content.add(new JLabel("Java 供应商: "
+                    + System.getProperty("java.vendor", "undefined")));
+            content.add(new JLabel("Java 版本: "
+                    + System.getProperty("java.version", "undefined")));
+            content.add(new JLabel(" "));
 
-		JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
-		buttonPanel.setBorder(BorderFactory.createCompoundBorder(BorderFactory
-				.createMatteBorder(1, 0, 0, 0, Color.GRAY), BorderFactory
-				.createEmptyBorder(16, 8, 8, 8)));
-		getContentPane().add(buttonPanel, BorderLayout.SOUTH);
+            content.add(new JLabel("全部内存: "
+                    + Runtime.getRuntime().totalMemory()));
+            content.add(new JLabel("剩余内存: "
+                    + Runtime.getRuntime().freeMemory()));
+        } catch (Exception e) {
+            // ignore
+        }
 
-		// Adds OK button to close window
-		JButton closeButton = new JButton("Close");
-		closeButton.addActionListener(new ActionListener()
-		{
-			public void actionPerformed(ActionEvent e)
-			{
-				setVisible(false);
-			}
-		});
+        getContentPane().add(content, BorderLayout.CENTER);
 
-		buttonPanel.add(closeButton);
+        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+        buttonPanel.setBorder(BorderFactory.createCompoundBorder(BorderFactory
+                .createMatteBorder(1, 0, 0, 0, Color.GRAY), BorderFactory
+                .createEmptyBorder(16, 8, 8, 8)));
+        getContentPane().add(buttonPanel, BorderLayout.SOUTH);
 
-		// Sets default button for enter key
-		getRootPane().setDefaultButton(closeButton);
-		
-		setResizable(false);
-		setSize(400, 480);
-	}
+        // Adds OK button to close window
+        JButton closeButton = new JButton("Close");
+        closeButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                setVisible(false);
+            }
+        });
 
-	/**
-	 * Overrides {@link JDialog#createRootPane()} to return a root pane that
-	 * hides the window when the user presses the ESCAPE key.O
-	 */
-	protected JRootPane createRootPane()
-	{
-		KeyStroke stroke = KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0);
-		JRootPane rootPane = new JRootPane();
-		rootPane.registerKeyboardAction(new ActionListener()
-		{
-			public void actionPerformed(ActionEvent actionEvent)
-			{
-				setVisible(false);
-			}
-		}, stroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
-		return rootPane;
-	}
+        buttonPanel.add(closeButton);
+
+        // Sets default button for enter key
+        getRootPane().setDefaultButton(closeButton);
+
+        setResizable(false);
+        setSize(400, 500);
+    }
+
+    /**
+     * Overrides {@link JDialog#createRootPane()} to return a root pane that
+     * hides the window when the user presses the ESCAPE key.O
+     */
+    protected JRootPane createRootPane() {
+        KeyStroke stroke = KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0);
+        JRootPane rootPane = new JRootPane();
+        rootPane.registerKeyboardAction(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                setVisible(false);
+            }
+        }, stroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
+        return rootPane;
+    }
 
 }

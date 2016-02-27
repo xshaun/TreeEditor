@@ -1,8 +1,6 @@
 package org.treeEditor.ui;
 
 import javax.swing.JTabbedPane;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 
 public class EditorTabbedPane extends JTabbedPane {
 
@@ -32,7 +30,7 @@ public class EditorTabbedPane extends JTabbedPane {
 //        enGraphComponent = editor.getEnGraphComponent();
 
         this.add(currentGraphComponent, 0);
-        this.addTab("当前面板", currentGraphComponent);
+        this.addTab("活动", currentGraphComponent);
 
 //        //加入选项面板
 //        this.add(chGraphComponent, 0);
